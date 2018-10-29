@@ -30,7 +30,7 @@ public class splash extends AppCompatActivity /**implements SurfaceHolder.Callba
     private SurfaceView surfaceView;
     private MediaPlayer mediaPlayer;
     private SurfaceHolder surfaceHolder;
-    //private static final String VIDEO_PATH = "android.resource://com.example.ireribrian.myapi/raw/videosplash.mp4";
+    private static final String VIDEO_PATH = "android.resource://com.example.ireribrian.myapi/"+R.raw.videosplash;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

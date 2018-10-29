@@ -5,8 +5,21 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.ireribrian.myapi.activities.AddContactActivity">
+    
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/avatar"
+        android:id="@+id/circleprof"
+        android:layout_width="200dp"
+        android:layout_height="200dp" />
+    
 
     <android.support.design.widget.TextInputLayout
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_below="@id/circleprof"
         android:id="@+id/first_name_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -15,7 +28,9 @@
             android:id="@+id/first_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:gravity="center"
             android:hint="First Name"
+            android:maxLines="1"
             android:textSize="18sp"
             android:inputType="text"/>
 
@@ -24,12 +39,16 @@
     <android.support.design.widget.TextInputLayout
         android:id="@+id/last_input_layout"
         android:layout_width="match_parent"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/first_name_layout">
 
         <android.support.design.widget.TextInputEditText
             android:id="@+id/last_name"
             android:hint="Last Name"
+            android:maxLines="1"
+            android:gravity="center"
             android:textSize="18sp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -40,13 +59,17 @@
     <android.support.design.widget.TextInputLayout
         android:id="@+id/phone_number_layout"
         android:layout_width="match_parent"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
         android:hint="Phone Number"
         android:textSize="18sp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/last_input_layout">
 
         <android.support.design.widget.TextInputEditText
+            android:maxLines="1"
             android:id="@+id/phone_number"
+            android:gravity="center"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="number"/>
@@ -56,6 +79,10 @@
     <Button
         android:layout_width="200dp"
         android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:textColor="#fff"
+        android:background="@drawable/btnadd"
         android:id="@+id/add_user_btn"
         android:layout_below="@id/phone_number_layout"
         android:textSize="15sp"
